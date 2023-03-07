@@ -1,13 +1,49 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./assets/header background/headerbg.jpg');
+
+  
+}
+.header{
+ height: 80px;
+ padding-top: 25px;
+}
+.nav-link{
+  color: rgb(163, 38, 163);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#home{
+  height: 100vh;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  color: rgb(163, 38, 163);
+  font-size: 70px;
+
 }
+.test{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+#aboutus, #featured, #logoservices,#services,#readmore,#logoservicespart {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: rgb(225, 154, 225);
+  font-size: 70px;
+}
+
+.milestonecarousel{
+  margin-top: 100px;
+}
+
+/* .bg-image{
+  background-image: url('./assets/milestone/milestone.png');
+  height: 400px;
+  width: 1000px;
+} */
