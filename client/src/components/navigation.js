@@ -3,10 +3,12 @@ function header (){
  
     return(
         <div className="head">
-             <ul className="nav header fixed-top container d-flex mb-3 ">
-                <a className="navbar-brand me-auto p-2">
-                    <img src={logo} height="35px" width="100px" alt="euodoo logo"/>
+             <ul className="nav header fixed-top d-flex mb-3 ">
+
+                <a className="navbar-brand me-auto p-2" href="#home">
+                    <img src={logo}  height="35px" width="100px" alt="euodoo logo"/>
                 </a>
+
                 <li className="nav-item">
                     <a className="nav-link active" aria-current="page" href="#home">HOME</a>  
                 </li>
@@ -21,6 +23,7 @@ function header (){
                 </li>
 
             </ul>
+
 
         </div>
 

@@ -1,12 +1,13 @@
 body {
   margin: 0;
-  background-image: url('./assets/header background/headerbg.jpg');
+  background-image: url('./assets/background/background.jpg');
 
   
 }
 .header{
  height: 80px;
- padding-top: 25px;
+ padding-top: 18px;
+ background-color: white;
 }
 .nav-link{
   color: rgb(163, 38, 163);
@@ -15,18 +16,60 @@ body {
 #home{
   height: 100vh;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
-  color: rgb(163, 38, 163);
   font-size: 70px;
 
 }
-.test{
-  display: flex;
+.hometext{
+  margin-left: 440px;
+  margin-top:148px;
+  width: 50%;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+}
+
+.navbar-brand{
+  margin-left: 80px;
+}
+.nav-item{
+  margin-right: 80px;
+}
+.nav-item:hover{
+  background-color: rgb(225, 154, 225);
+  height:45px;
+ 
+}
+.nav-link:hover {
+  color: black;
+
+}
+
+.header-bg{
+  background-image: url('./assets/background/deskbg.jpg'); 
+  height: 70vh;
   width: 100%;
-  align-items: center;
-  justify-content: center;
-  font-size: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(8px 8px 10px rgb(54, 46, 54)) invert(81%) sepia(45%) saturate(647%) hue-rotate(233deg) brightness(103%) contrast(105%);
+}
+#carouselExampleIndicators{
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* filter: drop-shadow(8px 8px 10px rgb(174, 131, 174)) invert(81%) sepia(45%) saturate(647%) hue-rotate(233deg) brightness(103%) contrast(105%); */
+
+}
+.milestone{
+  height: 300px;
+  margin-top: 8px;
+ 
+} 
+
+/* .carousel-indicators, .carousel-control-prev, .carousel-control-next{
+  background-color: #f00;
+} */
+.rounded-circle{
+  margin: auto;
 }
 #aboutus, #featured, #logoservices,#services,#readmore,#logoservicespart {
   display: flex;
@@ -38,9 +81,7 @@ body {
   font-size: 70px;
 }
 
-.milestonecarousel{
-  margin-top: 100px;
-}
+
 
 /* .bg-image{
   background-image: url('./assets/milestone/milestone.png');
