@@ -99,19 +99,42 @@ const homepage = ()=>{
             </section>
            
             <section className="container" id="aboutus">
-                <h2 className=" text-uppercase text-center buildingtech">Our Company Profile</h2>
-                <div class="card  cardourprofile">
+                <div className=" ourcompany">
+                    <h2 className=" text-uppercase text-center buildingtech">Our Company Profile</h2>
+                    <h5 className="text-uppercase buildingtech mt-5">How It All Started</h5>
+
+                    <p class="card-text textaboutus">
+                                euodoó Technologies, inc. is an outcome of more than fifteen (15) years of 
+                                extensive experience within the Information Technology (IT) Solutions and 
+                                Services industry. Formerly Innovare Tekhne, the spin-off company now carries 
+                                the Systems Integrator (SI) products and services while Innovare will focus on 
+                                IT-managed services. 
+                            </p>
+                            <p className="textaboutus">
+                                The firm provides comprehensive IT Solutions focusing on areas such as 
+                                Enterprise Content Management (ECM), Enterprise Resource Planning (ERP), Governance, 
+                                Risk Management and Compliance (GRC), Anti-Money Laundering (AML) system, Integrated Cloud 
+                                School Management system, Human Resource Information System (HRIS), Automated Bus Ticketing 
+                                System (ABTS), customized software development and outsourced IT solutions and services, 
+                                both in public and private entities.
+                            </p>
+                            <button type="button" className="mt-3 letsgo">See More</button>
+                        
+                </div>
+                
+                {/* <div class="card  cardourprofile">
                     <div class="card-header">
                         <h5 className="text-uppercase buildingtech">How It All Started</h5>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">
+                        <p class="card-text textaboutus">
                             euodoó Technologies, inc. is an outcome of more than fifteen (15) years of 
                             extensive experience within the Information Technology (IT) Solutions and 
                             Services industry. Formerly Innovare Tekhne, the spin-off company now carries 
                             the Systems Integrator (SI) products and services while Innovare will focus on 
-                            IT-managed services.
-
+                            IT-managed services. 
+                        </p>
+                        <p className="textaboutus">
                             The firm provides comprehensive IT Solutions focusing on areas such as 
                             Enterprise Content Management (ECM), Enterprise Resource Planning (ERP), Governance, 
                             Risk Management and Compliance (GRC), Anti-Money Laundering (AML) system, Integrated Cloud 
@@ -121,7 +144,7 @@ const homepage = ()=>{
                         </p>
                         <button type="button" className="mt-3 letsgo">See More</button>
                     </div>
-                </div>
+                </div> */}
             </section>
             <section id="featured">
                 All in a day's work at Euodoo Tech
