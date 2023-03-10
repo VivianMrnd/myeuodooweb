@@ -20,68 +20,92 @@ body {
 
 }
 .hometext{
-  margin-left: 440px;
+  margin-left: 450px;
   margin-top:148px;
-  width: 50%;
-  color: rgb(0, 0, 0);
+  color: rgb(141, 45, 141);
   text-align: justify;
 }
-
-.navbar-brand{
-  margin-left: 80px;
+.buildingtech{
+  letter-spacing: 3px;
+}
+.hometextp{
+  letter-spacing: 2px;
+}
+.hometextp:hover{
+  font-size: large;
+}
+.letsgo{
+  border:2px solid rgb(205, 159, 205);
+  padding: 8px;
+  color: rgb(130, 37, 130);
+  border-radius: 20px;
+}
+.letsgo:hover{
+  background-color: rgb(225, 154, 225);
+  color: black;
 }
 .nav-item{
   margin-right: 80px;
 }
 .nav-item:hover{
-  background-color: rgb(225, 154, 225);
-  height:45px;
- 
+  background-color: rgb(225, 154, 225); 
 }
 .nav-link:hover {
   color: black;
 
 }
-
+.dropdown-item{
+  color: rgb(163, 38, 163);
+}
 .header-bg{
   background-image: url('./assets/background/deskbg.jpg'); 
-  height: 70vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: drop-shadow(8px 8px 10px rgb(54, 46, 54)) invert(81%) sepia(45%) saturate(647%) hue-rotate(233deg) brightness(103%) contrast(105%);
+  /* filter: drop-shadow(8px 8px 10px rgb(54, 46, 54)) invert(81%) sepia(45%) saturate(647%) hue-rotate(233deg) brightness(103%) contrast(105%); */
+  /* filter: drop-shadow(8px 8px 10px rgb(54, 46, 54)); */
 }
-#carouselExampleIndicators{
-  height: 40vh;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* filter: drop-shadow(8px 8px 10px rgb(174, 131, 174)) invert(81%) sepia(45%) saturate(647%) hue-rotate(233deg) brightness(103%) contrast(105%); */
 
+#carouselExampleIndicators{
+  margin-right: 100px;
 }
+
+
 .milestone{
   height: 300px;
   margin-top: 8px;
  
 } 
 
-/* .carousel-indicators, .carousel-control-prev, .carousel-control-next{
-  background-color: #f00;
-} */
+.carousel-control-prev, .carousel-control-next{
+  margin-top: 100px;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(95, 20, 95);
+}
+
+
 .rounded-circle{
   margin: auto;
 }
 #aboutus, #featured, #logoservices,#services,#readmore,#logoservicespart {
-  display: flex;
   height: 100vh;
-  width: 100%;
-  align-items: center;
+  padding: 80px;
+  /* align-items: center; */
   justify-content: center;
-  color: rgb(225, 154, 225);
-  font-size: 70px;
+
 }
 
+.cardourprofile{
+  width: 950px;
+  /* background-color:red; */
+}
 
+@media screen and (min-width: 1000px){
+  .navbar-brand{
+    margin-left: 80px;
+  }
+}
 
 /* .bg-image{
   background-image: url('./assets/milestone/milestone.png');
