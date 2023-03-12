@@ -1,49 +1,95 @@
 body {
-  margin: 0;
+  margin:0;
+  padding:0;
   background-image: url('./assets/background/background.jpg');
-
+  }
+/* --------------------------------scrollable design--------------------------------- */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  }
   
+  ::-webkit-scrollbar-track {
+  border-radius: 12px;
+  }
+  
+  ::-webkit-scrollbar-track:vertical {
+  background: -webkit-linear-gradient(top, white, rgb(207, 146, 194)); 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: rgb(138, 84, 124);  
+  border-radius: 12px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+  background: rgb(146, 102, 146);
+  }
+/* -------------------------------- end scrollable design--------------------------------- */
+/* ------------------------------------header images----------------------------------- */
+#building{
+  position: absolute;
+  top: 80px;
+  height: 450px;
+  width: 700px;
 }
-.header{
- height: 80px;
- padding-top: 18px;
- background-color: white;
+#bus{
+  position: absolute;
+  top: 190px;
+  height: 120px;
+  width: 200px;
+  left: 270px;
+  transform: scaleX(-1);
 }
-.nav-link{
-  color: rgb(163, 38, 163);
+#computer{
+  position: absolute;
+  top: 150px;
+  height: 190px;
+  width: 210px;
+  left: 500px;
 }
 
+/* ------------------------------------ end header images----------------------------------- */
+
+/* -----------------------------------homepage text design ------------------------------------------ */
 #home{
-  height: 100vh;
+  height: 45vh;
   display: flex;
-  font-size: 70px;
+  background-color: rgb(237, 246, 250);
+}
 
-}
-.hometext{
-  margin-left: 450px;
-  margin-top:148px;
-  color: rgb(141, 45, 141);
-  text-align: justify;
-}
 .buildingtech{
   letter-spacing: 3px;
+  color: rgb(141, 45, 141);
 }
 .hometextp{
-  letter-spacing: 2px;
+  letter-spacing: .5px;
+  font-size: 18px;
+  color: rgb(119, 55, 105);
 }
-.hometextp:hover{
-  font-size: large;
-}
-.letsgo{
-  border:2px solid rgb(205, 159, 205);
-  padding: 8px;
+
+/* .letsgo{
+  border:3px solid rgb(205, 159, 205);
+  padding: 10px;
   color: rgb(130, 37, 130);
+  font-size: 15px;
   border-radius: 20px;
+  background:transparent;
 }
 .letsgo:hover{
   background-color: rgb(225, 154, 225);
-  color: black;
-}
+} */
+/* ----------------------------------- end homepage text design------------------------------------------ */
+/* ----------------------------------------navigation------------------------------------- */
+/* .head{
+  height: 80px;
+  padding-top: 18px;
+  background-color: rgb(29, 3, 29);
+ 
+ } */
+
+ .nav-link{
+   color: rgb(163, 38, 163);
+ }
 .nav-item{
   margin-right: 80px;
 }
@@ -51,74 +97,457 @@ body {
   background-color: rgb(225, 154, 225); 
 }
 .nav-link:hover {
-  color: black;
+  color: rgb(95, 86, 86);
 
 }
 .dropdown-item{
   color: rgb(163, 38, 163);
 }
-.header-bg{
-  background-image: url('./assets/background/deskbg.jpg'); 
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* filter: drop-shadow(8px 8px 10px rgb(54, 46, 54)) invert(81%) sepia(45%) saturate(647%) hue-rotate(233deg) brightness(103%) contrast(105%); */
-  /* filter: drop-shadow(8px 8px 10px rgb(54, 46, 54)); */
+.dropdown-item:hover{
+  background-color: rgb(225, 154, 225);
 }
 
-#carouselExampleIndicators{
-  margin-right: 100px;
-}
+/* ---------------------------------------- end navigation------------------------------------- */
+/* ---------------------------------------nav pages sizes--------------------------- */
+ #aboutus, #featured, #logoservices,#services,#readmore,#logoservicespart {
+  height: 100vh;
+  /* align-items: center; */
+  /* justify-content: center; */
 
+}
 
 .milestone{
-  height: 300px;
-  margin-top: 8px;
- 
-} 
-
-.carousel-control-prev, .carousel-control-next{
-  margin-top: 100px;
-  height: 40px;
-  width: 40px;
-  background-color: rgb(95, 20, 95);
+  height: 50vh;
 }
 
-
-.rounded-circle{
-  margin: auto;
+/* ---------------------------------------milestone--------------------------- */
+.carousel-indicators button{
+  /* background-image: url('./assets/milestone/services/indicator.png');  */
+  min-width: 20px;
+  min-height: 20px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	border:3px solid transparent;
+	transition: all 0.3s ease;
 }
-#aboutus, #featured, #logoservices,#services,#readmore,#logoservicespart {
-  height: 100vh;
-  padding: 80px;
-  /* align-items: center; */
-  justify-content: center;
-
+.carousel-indicators {
+  bottom: -74px;
+}
+.buildingtech{
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #aa3b98 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 6s linear infinite;
+  display: inline-block;
+}
+.milestonetext
+{
+  margin-top: 120px;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+      font-size: 40px;
 }
 
-.cardourprofile{
-  width: 950px;
-  /* background-color:red; */
-  background: transparent;
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
+
+/* --------------------------------------- end milestone--------------------------- */
+
+/* ---------------------------------------end nav pages sizes--------------------------- */
+
+/* -----------------------------------about us page------------------------------------------- */
 .textaboutus{
   text-indent: 50px;
-  color: aliceblue;
+
 }
 .ourcompany{
-  width: 600px;
-  margin-left: 330px;
+  /* width: 600px; */
   text-align: justify;
+  /* margin: auto; */
 }
+.aboutuscard{
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.seemorebtn{
+  border:3px solid rgb(80, 28, 80);
+  padding: 10px;
+  color: rgb(130, 37, 130);
+  font-size: 15px;
+  border-radius: 20px;
+  background:transparent;
+}
+.seemorebtn:hover{
+  background-color: rgb(141, 59, 137);
+  color: white;
+}
+.howitall, .textaboutus{
+  color: rgb(105, 38, 105);
+}
+
+.companyproftext{
+  color: rgb(87, 30, 126);
+}
+.circles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+
+}
+/* ----------------------------------- end about us page------------------------------------------- */
+/* -----------------------all in a day's work------------------------------------------ */
+.titlefeature{
+  background-color: rgba(255, 254, 254, 0.78);;
+  border-radius: 25px;
+  color: rgb(87, 30, 126);
+  padding: 10px;
+}
+.findout{
+  font-size: 18px;
+}
+.readmorebtn{
+  background-color: rgb(141, 59, 137);
+  color: white;
+}
+.readmorebtn:hover{
+  background-color: rgb(155, 79, 151);
+  color: white;
+}
+.featuredcard{
+  width: 18rem;
+  background: rgba(255, 254, 255, 0.8);
+
+}
+.featuredcard{
+  border-radius: 25px;
+}
+.featuredcard img{
+  border-radius: 25px;
+}
+.capfeatured{
+  height: 250px;
+}
+
+/* -----------------------end all in a day's work------------------------------------------ */
+/* -------------------------------logo services-------------------------------------- */
+
+.jeep{
+  padding-top: 30px;
+}
+#logoservices{
+  background-color: rgb(207, 194, 243);
+}
+.contentservices{
+  padding: 15px;
+  border-radius: 25px;
+  color: #48165f;
+}
+.textnote{
+  font-size: 18px;
+  /* font-weight: 200; */
+}
+/* -------------------------------end logo services-------------------------------------- */
 
 @media screen and (min-width: 1000px){
   .navbar-brand{
     margin-left: 80px;
   }
+  .hometext{
+    padding-top: 100px;
+    padding-left: 700px;
+    padding-right: 10px;
+  }
+  .carousel-inner{
+    padding-left:130px;
+    
+  }
+  .carousel-inner img{
+    height: 330px;
+  }
+  #carouselExampleIndicators{
+    width:600px;
+    height: 300px;
+  }
+  .carousel-indicators {
+    margin-right: 90px;
+  }
+  .ourcompany{
+    padding-top: 100px;
+  }
+ .textaboutus{
+    padding-top: 5px;
+    padding-right: 100px;
+    font-size: 17px;
+  }
+  .titlefeature{
+    width: 1000px;
+    margin: auto;
+  }
+  .cardsfeatured{
+    width: 1000px;
+    margin: auto;
+  }
+  .jeep{
+    margin-left: 500px;
+  }
+  .contentservices{
+    width: 800px;
+    margin-left:290px;
+  }
+  .textnote{
+    margin-left:100px;
+    width: 600px;
+  }
 }
+
+@media screen and (max-width: 999px){
+  #home{
+    height: 100vh;
+  }
+  .hometext{
+    padding-top: 175px;
+    z-index: 1;
+  }
+  #building{
+    height: 250px;
+    max-width: 280px;
+    top: 50px;
+  }
+  #bus{
+    height: 0px;
+    width: 0px;
+    z-index: -1;
+  }
+  #computer{
+    height: 0px;
+    width: 0px;
+    z-index: -1;
+  }
+  .carousel-inner{
+    padding-left: 64px;
+  }
+  .carousel-inner img{
+    height: 330px;
+  }
+  #carouselExampleIndicators{
+    height: 300px;
+    width:400px;
+  }
+  .milestonetext{
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  #aboutus{
+    padding-top: 170px;
+  }
+  .companyproftext{
+   background-color: #aa3b98;
+   border-radius: 25px;
+
+  } 
+  .howitall, .textaboutus{
+    padding-top: 1px;
+  }
+  .jeep{
+    margin-left: 50px;
+  }
+}
+
+
+
+
+
+
+
+.header-bg{
+  /* background-image: url('./assets/background/deskbg2.jpg'); 
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  /* filter: drop-shadow(8px 8px 10px rgb(54, 46, 54)) invert(81%) sepia(45%) saturate(647%) hue-rotate(233deg) brightness(103%) contrast(105%); */
+  /* filter: drop-shadow(8px 8px 10px rgb(54, 46, 54)); */
+}
+/* .carousel-item{
+  width: 700px;
+  height: 700px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+  height: 30px;
+  width: 30px;
+  background-color: rgb(95, 20, 95);
+
+}
+.carousel-control-prev{
+  position: absolute;
+  top: 100px;
+  
+}
+.carousel-control-next{
+  position: absolute;
+  right:10px;
+  top: 100px;
+}
+.carousel-indicators{
+  left: 150px;
+  top: 320px;
+  height:20px;
+  width: 250px;
+  background-color:rgb(129, 116, 116);
+  border-radius: 35%;
+}
+.Slide{color: blue;}
+.rounded-circle{
+  margin: auto;
+}  */
 
 /* .bg-image{
   background-image: url('./assets/milestone/milestone.png');
   height: 400px;
   width: 1000px;
-} */
+}*/
+
+
+
+
+
+

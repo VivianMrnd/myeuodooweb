@@ -3,7 +3,7 @@ import Navigation from './components/navigation';
 import Home from './pages/home';
 function App() {
   return (
-    <div className="App ">
+    <div className="container-fluid m-0 p-0 App ">
       <Navigation/>
       <BrowserRouter>
         <Routes>
