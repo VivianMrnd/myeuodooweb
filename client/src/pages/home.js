@@ -1,5 +1,5 @@
 
-import bus from "../assets/headerpic/bus.png";
+import header from "../assets/headerpic/header.png";
 import computer from "../assets/headerpic/computer.png";
 import building from "../assets/headerpic/building.png";
 import s2018 from "../assets/milestone/services/s2018.png";
@@ -14,7 +14,7 @@ import fb from "../assets/news/videos/NewsLive.mp4";
 import euodoonews from "../assets/news/videos/NewsVid.mp4";
 import jeep from "../assets/home/modern_jeep.png";
 import bridge from "../assets/home/bridge.png";
-
+import clients from "../components/db";
 
 
 
@@ -22,170 +22,100 @@ const homepage = ()=>{
     return(
         <div className="">
             <section id="home" className=" header-bg">
-                   
-                <div className="headerpictures">
-                    <img id="bus" src={bus}  alt="bus"/>
-                    <img id="building" classNam="" src={building}  alt="building"/>
-                    <img id="computer" src={computer}  alt="computer"/>
-                </div>
-
-
-                <div className="hometext text-center" >
+           {/* lh-base fw-semibold */}
+              <div className="hometext text-center" >
                     <h3 className="text-uppercase buildingtech">Building  Technologies, <br/>Inspiring Innovations.</h3>
-                    <p className="lh-base fw-semibold hometextp">
+                    <p className="mx-5  fs-5 hometextp">
                         euodoó Technologies, Inc. way of providing service is anchored to excellence, innovation, and
                         commitment to its potential and existing clientele, thus nurturing long-standing business 
                         relationships. </p>
-                    <br/>
-                    {/* <button type="button" className="fw-bold letsgo">Let's go</button> */}
-                </div>
-            </section>
-            <section className="milestone">
-                <div className="row p-0 m-0 float-end">
-                    <div className="col">
-                        <h1 className="milestonetext">Our Milestones</h1>
-                    </div>
-                    <div className="col">
-                        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-                            <div className="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                            </div>
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <img id="s2018" src={s2018}  alt="s2018"/>  
-                                </div>
-                                <div className="carousel-item">
-                                    <img id="s2018" src={s2019}  alt="s2019"/>  
-                                </div>
-                                <div className="carousel-item">
-                                    <img id="s2018" src={s2020}  alt="s2020"/>  
-                                </div>
-                                <div className="carousel-item">
-                                    <img id="s2018" src={s2021}  alt="s2021"/>  
-                                </div>
-                                <div className="carousel-item">
-                                    <img id="s2018" src={s2022}  alt="s2022"/>  
-                                </div>
-                                <div className="carousel-item">
-                                    <img id="s2018" src={s2023}  alt="s2023"/>  
-                                </div>
-                            </div>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Next</span>
-                            </button>
+               
+                    <h3 className="text-uppercase mb-4 buildingtech">our milestones</h3>
+                    <div class="p-0 m-0 text-center">
+                        <div class="row">
+                            <div class="col"><img src={s2018} class="img-fluid " alt="s2018"/></div>
+                            <div class="col"><img src={s2019} class="img-fluid " alt="s2019"/></div>
+                            <div class="col"><img src={s2020} class="img-fluid " alt="s2020"/></div>
+                            <div class="col"><img src={s2021} class="img-fluid " alt="s2021"/></div>
+                            <div class="col"><img src={s2022} class="img-fluid " alt="s2022"/></div>
+                            <div class="col"><img src={s2023} class="img-fluid " alt="2023"/></div>
                         </div>
                     </div>
-                </div>
-                
-            </section>
-            <section className="" id="aboutus">
-                <div className=" mx-5 ourcompany ">          
-                        <h2 className=" text-uppercase companyproftext text-center ">Our Company Profile</h2>
-                            <div className="card rounded-pill aboutuscard">
-                                <div className="row g-0">
-                                    <div className="col-md-4">
-                                        <img src={strategy} className="img-fluid rounded-start py-5 px-2" alt="euodoo"/>
-                                    </div>
-                                    <div className="col-md-8 ">
-                                        <div className="card-body">
-                                            <h3 className="text-uppercase card-title howitall">How It All Started</h3>
-                                            <p class="card-text textaboutus">
-                                            <b>
-                                                euodoó Technologies, inc. is an outcome of more than fifteen (15) years of 
-                                                extensive experience within the Information Technology (IT) Solutions and 
-                                                Services industry. Formerly Innovare Tekhne, the spin-off company now carries 
-                                                the Systems Integrator (SI) products and services while Innovare will focus on 
-                                                IT-managed services. </b>
-                                            </p>
-                                            <p className="textaboutus">
-                                                <b>
-                                                The firm provides comprehensive IT Solutions focusing on areas such as 
-                                                Enterprise Content Management (ECM), Enterprise Resource Planning (ERP), Governance, 
-                                                Risk Management and Compliance (GRC), Anti-Money Laundering (AML) system, Integrated Cloud 
-                                                School Management system, Human Resource Information System (HRIS), Automated Bus Ticketing 
-                                                System (ABTS), customized software development and outsourced IT solutions and services, 
-                                                both in public and private entities. </b>
-                                            </p>
-                                            <button type="button" className="btn seemorebtn"><b>See More</b></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                              
                 </div>
                 <div class="area" >
                         <ul class="circles">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ul>
-                </div >
+                </div>
+            </section>
+
+            <section className="" id="aboutus"> 
+            
+                <div className=" mx-5  ">   
+                    <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src={strategy} class="img-fluid rounded-start" alt="..."/>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>      
+                    {/* <h2 className=" text-uppercase buildingtech">Our Company Profile</h2>
+                    <div className="card rounded-pill aboutuscard">
+                        <div className="row g-0">
+                            <div className="col-md-4">
+                                <img src={strategy} className="img-fluid rounded-start py-5 px-2" alt="euodoo"/>
+                            </div>
+                            <div className=" col-md-8 px-5 w-50 pt-5">
+                                <div className="aboutuscontent card-body">
+                                    <h3 className="textaboutus text-uppercase card-title">How It All Started</h3>
+                                    <p class="card-text textaboutus">
+                                    <b>
+                                        euodoó Technologies, inc. is an outcome of more than fifteen (15) years of 
+                                        extensive experience within the Information Technology (IT) Solutions and 
+                                        Services industry. Formerly Innovare Tekhne, the spin-off company now carries 
+                                        the Systems Integrator (SI) products and services while Innovare will focus on 
+                                        IT-managed services. </b>
+                                    </p>
+                                    <p className="textaboutus">
+                                        <b>
+                                        The firm provides comprehensive IT Solutions focusing on areas such as 
+                                        Enterprise Content Management (ECM), Enterprise Resource Planning (ERP), Governance, 
+                                        Risk Management and Compliance (GRC), Anti-Money Laundering (AML) system, Integrated Cloud 
+                                        School Management system, Human Resource Information System (HRIS), Automated Bus Ticketing 
+                                        System (ABTS), customized software development and outsourced IT solutions and services, 
+                                        both in public and private entities. </b>
+                                    </p>
+                                    <button type="button" className="btn aboutusbtn"><b>See More</b></button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>    */}      
+                </div>
             </section>
             <section id="featured">
-                <div className="text-center titlefeature">
-                    <h2 className=" text-uppercase">All in a day's work at Euodoo Tech</h2>
-                    <p className=" findout"><b>Find out more of the latest news and updates, all powered by euodoó Tech.</b></p>
-                    <button type="button" className="btn readmorebtn"><b>Read More</b></button>
-                </div>
-                <div className="row  cardsfeatured">
-                    <div className="col-sm-4 pt-4">
-                        <div className="featuredcard card">
-                            <img src={jeepney} className="card-img-top capfeatured" alt="..."/>
-                            <div className="card-body">
-                                <h6 className="card-title">PM Jeepney launching</h6>
-                                <button type="button" className="btn seemorebtn"><b>See More</b></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-sm-4 pt-4">
-                        <div className="featuredcard card">
-                            <video src={fb} className="capfeatured" controls autoplay loop muted></video>
-                            <div className="card-body">
-                                <h6 className="card-title">Facebook live by Jacque Manabat</h6>
-                                <button type="button" className="btn seemorebtn"><b>See More</b></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-sm-4 pt-4">
-                        <div className="featuredcard card">
-                            <video src={euodoonews} className="capfeatured" controls autoplay loop></video>
-                            <div className="card-body">
-                                <h6 className="card-title">euodoó featured in News Articles</h6>
-                                <button type="button" className="btn seemorebtn"><b>See More</b></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
             </section>
-            <section id="logoservices">
+            <section id="client">
               
-                <img src={jeep} className="jeep"  alt="jeep"/>
-                <div className="contentservices">
-                    <h4 className="text-center">We are greatful to work with various organizations and business</h4>
-                    <p className="text-center textnote">At euodoo Technologies, Inc., we believe that your IT requirements should
-                        be supported by experienced professionals, and offer a variety of services to cater
-                        to your organization’s needs.</p>
-                </div>
-                
+
             </section>
-            <section id="logoservicespart">
+            <section id="partner">
                 LOGO PARTNER
 
                 cvent

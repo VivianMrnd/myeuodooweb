@@ -1,7 +1,8 @@
 body {
   margin:0;
   padding:0;
-  background-image: url('./assets/background/background.jpg');
+  background-color: rgb(237, 246, 250);
+  /* background-image: url('./assets/background/background.jpg'); */
   }
 /* --------------------------------scrollable design--------------------------------- */
 ::-webkit-scrollbar {
@@ -14,7 +15,7 @@ body {
   }
   
   ::-webkit-scrollbar-track:vertical {
-  background: -webkit-linear-gradient(top, white, rgb(207, 146, 194)); 
+  background: -webkit-linear-gradient(top, white, rgb(146, 184, 207)); 
   }
   
   ::-webkit-scrollbar-thumb {
@@ -26,66 +27,48 @@ body {
   }
 /* -------------------------------- end scrollable design--------------------------------- */
 /* ------------------------------------header images----------------------------------- */
-#building{
-  position: absolute;
-  top: 80px;
-  height: 450px;
-  width: 700px;
-}
-#bus{
-  position: absolute;
-  top: 190px;
-  height: 120px;
-  width: 200px;
-  left: 270px;
-  transform: scaleX(-1);
-}
-#computer{
-  position: absolute;
-  top: 150px;
-  height: 190px;
-  width: 210px;
-  left: 500px;
-}
+
 
 /* ------------------------------------ end header images----------------------------------- */
 
 /* -----------------------------------homepage text design ------------------------------------------ */
-#home{
-  height: 45vh;
-  display: flex;
-  background-color: rgb(237, 246, 250);
-}
 
 .buildingtech{
   letter-spacing: 3px;
   color: rgb(141, 45, 141);
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #aa3b98 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 6s linear infinite;
+  display: inline-block;
 }
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 .hometextp{
   letter-spacing: .5px;
-  font-size: 18px;
   color: rgb(119, 55, 105);
 }
 
-/* .letsgo{
-  border:3px solid rgb(205, 159, 205);
-  padding: 10px;
-  color: rgb(130, 37, 130);
-  font-size: 15px;
-  border-radius: 20px;
-  background:transparent;
-}
-.letsgo:hover{
-  background-color: rgb(225, 154, 225);
-} */
+
 /* ----------------------------------- end homepage text design------------------------------------------ */
 /* ----------------------------------------navigation------------------------------------- */
-/* .head{
-  height: 80px;
-  padding-top: 18px;
-  background-color: rgb(29, 3, 29);
- 
- } */
+
 
  .nav-link{
    color: rgb(163, 38, 163);
@@ -109,117 +92,14 @@ body {
 
 /* ---------------------------------------- end navigation------------------------------------- */
 /* ---------------------------------------nav pages sizes--------------------------- */
- #aboutus, #featured, #logoservices,#services,#readmore,#logoservicespart {
+ #home, #aboutus, #featured, #client,#services,#readmore,#partner {
   height: 100vh;
   /* align-items: center; */
   /* justify-content: center; */
 
 }
-
-.milestone{
-  height: 50vh;
-}
-
-/* ---------------------------------------milestone--------------------------- */
-.carousel-indicators button{
-  /* background-image: url('./assets/milestone/services/indicator.png');  */
-  min-width: 20px;
-  min-height: 20px;
-	border-radius: 50%;
-	background-position: center;
-	background-size: cover;
-	border:3px solid transparent;
-	transition: all 0.3s ease;
-}
-.carousel-indicators {
-  bottom: -74px;
-}
-.buildingtech{
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #aa3b98 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 6s linear infinite;
-  display: inline-block;
-}
-.milestonetext
-{
-  margin-top: 120px;
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 3s linear infinite;
-  display: inline-block;
-      font-size: 40px;
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-
-/* --------------------------------------- end milestone--------------------------- */
-
 /* ---------------------------------------end nav pages sizes--------------------------- */
-
-/* -----------------------------------about us page------------------------------------------- */
-.textaboutus{
-  text-indent: 50px;
-
-}
-.ourcompany{
-  /* width: 600px; */
-  text-align: justify;
-  /* margin: auto; */
-}
-.aboutuscard{
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.seemorebtn{
-  border:3px solid rgb(80, 28, 80);
-  padding: 10px;
-  color: rgb(130, 37, 130);
-  font-size: 15px;
-  border-radius: 20px;
-  background:transparent;
-}
-.seemorebtn:hover{
-  background-color: rgb(141, 59, 137);
-  color: white;
-}
-.howitall, .textaboutus{
-  color: rgb(105, 38, 105);
-}
-
-.companyproftext{
-  color: rgb(87, 30, 126);
-}
+/* --------------------------background animation-------------------------- */
 .circles{
   position: absolute;
   top: 0;
@@ -235,7 +115,7 @@ body {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(187, 78, 206, 0.2);
   animation: animate 25s linear infinite;
   bottom: -150px;
   
@@ -333,218 +213,50 @@ body {
   }
 
 }
-/* ----------------------------------- end about us page------------------------------------------- */
-/* -----------------------all in a day's work------------------------------------------ */
-.titlefeature{
-  background-color: rgba(255, 254, 254, 0.78);;
-  border-radius: 25px;
-  color: rgb(87, 30, 126);
+/* --------------------------end background animation-------------------------- */
+/* ------------------------------------about us page ----------------------------------- */
+.aboutustitle{
+  padding-top: 90px;
+  /* max-width: 540px; */
+}
+.textaboutus{
+  color: rgb(116, 22, 116);
+}
+.aboutusbtn{
   padding: 10px;
+  color: rgb(251, 241, 251);
+  font-size: 15px;
+  border-radius: 20px;
+  background-color:rgb(160, 87, 160);
 }
-.findout{
-  font-size: 18px;
-}
-.readmorebtn{
+.aboutusbtn:hover{
   background-color: rgb(141, 59, 137);
   color: white;
 }
-.readmorebtn:hover{
-  background-color: rgb(155, 79, 151);
-  color: white;
-}
-.featuredcard{
-  width: 18rem;
-  background: rgba(255, 254, 255, 0.8);
+/* ----------------------------------- end about us page------------------------------------------- */
 
-}
-.featuredcard{
-  border-radius: 25px;
-}
-.featuredcard img{
-  border-radius: 25px;
-}
-.capfeatured{
-  height: 250px;
-}
-
-/* -----------------------end all in a day's work------------------------------------------ */
-/* -------------------------------logo services-------------------------------------- */
-
-.jeep{
-  padding-top: 30px;
-}
-#logoservices{
-  background-color: rgb(207, 194, 243);
-}
-.contentservices{
-  padding: 15px;
-  border-radius: 25px;
-  color: #48165f;
-}
-.textnote{
-  font-size: 18px;
-  /* font-weight: 200; */
-}
-/* -------------------------------end logo services-------------------------------------- */
-
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 574px){
   .navbar-brand{
     margin-left: 80px;
   }
   .hometext{
-    padding-top: 100px;
-    padding-left: 700px;
-    padding-right: 10px;
+    padding-top: 150px;
   }
-  .carousel-inner{
-    padding-left:130px;
-    
-  }
-  .carousel-inner img{
-    height: 330px;
-  }
-  #carouselExampleIndicators{
-    width:600px;
-    height: 300px;
-  }
-  .carousel-indicators {
-    margin-right: 90px;
-  }
-  .ourcompany{
-    padding-top: 100px;
-  }
- .textaboutus{
-    padding-top: 5px;
-    padding-right: 100px;
-    font-size: 17px;
-  }
-  .titlefeature{
-    width: 1000px;
-    margin: auto;
-  }
-  .cardsfeatured{
-    width: 1000px;
-    margin: auto;
-  }
-  .jeep{
-    margin-left: 500px;
-  }
-  .contentservices{
-    width: 800px;
-    margin-left:290px;
-  }
-  .textnote{
-    margin-left:100px;
-    width: 600px;
-  }
+
 }
 
-@media screen and (max-width: 999px){
-  #home{
-    height: 100vh;
-  }
+@media screen and (max-width: 573px){
+  /* #home{
+    height: 400vh;
+  } */
   .hometext{
-    padding-top: 175px;
+    padding-top:  75px;
     z-index: 1;
   }
-  #building{
-    height: 250px;
-    max-width: 280px;
-    top: 50px;
-  }
-  #bus{
-    height: 0px;
-    width: 0px;
-    z-index: -1;
-  }
-  #computer{
-    height: 0px;
-    width: 0px;
-    z-index: -1;
-  }
-  .carousel-inner{
-    padding-left: 64px;
-  }
-  .carousel-inner img{
-    height: 330px;
-  }
-  #carouselExampleIndicators{
-    height: 300px;
-    width:400px;
-  }
-  .milestonetext{
-    margin-top: 20px;
-    margin-left: 50px;
-  }
-  #aboutus{
-    padding-top: 170px;
-  }
-  .companyproftext{
-   background-color: #aa3b98;
-   border-radius: 25px;
-
-  } 
-  .howitall, .textaboutus{
-    padding-top: 1px;
-  }
-  .jeep{
-    margin-left: 50px;
-  }
-}
-
-
-
-
-
-
-
-.header-bg{
-  /* background-image: url('./assets/background/deskbg2.jpg'); 
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat; */
-  /* filter: drop-shadow(8px 8px 10px rgb(54, 46, 54)) invert(81%) sepia(45%) saturate(647%) hue-rotate(233deg) brightness(103%) contrast(105%); */
-  /* filter: drop-shadow(8px 8px 10px rgb(54, 46, 54)); */
-}
-/* .carousel-item{
-  width: 700px;
-  height: 700px;
-}
-
-.carousel-control-prev, .carousel-control-next{
-  height: 30px;
-  width: 30px;
-  background-color: rgb(95, 20, 95);
 
 }
-.carousel-control-prev{
-  position: absolute;
-  top: 100px;
-  
-}
-.carousel-control-next{
-  position: absolute;
-  right:10px;
-  top: 100px;
-}
-.carousel-indicators{
-  left: 150px;
-  top: 320px;
-  height:20px;
-  width: 250px;
-  background-color:rgb(129, 116, 116);
-  border-radius: 35%;
-}
-.Slide{color: blue;}
-.rounded-circle{
-  margin: auto;
-}  */
 
-/* .bg-image{
-  background-image: url('./assets/milestone/milestone.png');
-  height: 400px;
-  width: 1000px;
-}*/
+
 
 
 
